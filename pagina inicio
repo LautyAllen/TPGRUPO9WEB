@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title> Index </title>
+    <meta charset="UTF-8"> <!-- cambiar codificacion de la pagina, para que por ejemplo pueda poneer acentos-->
+    <meta name="keywords" content="INSTITUTO, INSTITUTO INGLES,INSTITUTO IDIOMAS,IDIOMAS,CURSOS">
+    <!--Cuando buscamos en el buscador la palabra te aparezca-->
+    <meta name="description"
+        content="Esta pagina web">
+    <meta name="author" content="LAUTARO JUAREZ, SANTIAGO,LUCAS,ARIEL">
+
+
+</head>
+
+
+<body>
+
+
+</body>
+
+
+
+
+</html>
