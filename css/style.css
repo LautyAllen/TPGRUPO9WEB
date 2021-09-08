@@ -1,3 +1,163 @@
+:root {
+  --colorPrincipal: #181a1b;
+  --colorSecundario: #364f5c;
+  --colorFont: #fff;
+  --colorFontSecundario: #a3b1b8;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+}
+
+/* GLOBALES */
+
+.contenedor {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header-fondo {
+  background-color: var(--colorPrincipal);
+  padding: 2rem 0;
+}
+
 .header {
-  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  color: var(--colorFont);
+  font-size: 4rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  color: var(--colorFontSecundario);
+}
+
+.redes {
+  display: flex;
+}
+
+.svg {
+  margin-right: 1rem;
+}
+.svg:last-of-type {
+  margin-right: 0;
+}
+
+/* NAVEGACIÓN */
+
+.navegacion {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--colorSecundario);
+  margin: 0;
+  padding: 1.6rem 0;
+}
+
+.navegacion li {
+  list-style: none;
+}
+
+.navegacion__a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--colorFont);
+  transition: all 0.2s;
+}
+
+.navegacion__a:hover {
+  color: var(--colorFontSecundario);
+}
+
+/* MAIN */
+
+.nosotros {
+  text-align: center;
+  font-size: 2.8rem;
+}
+.nosotros h1 {
+  margin: 3rem;
+}
+
+.parrafo {
+  display: flex;
+  gap: 8rem;
+  margin-bottom: 5rem;
+}
+
+.parrafo p {
+  margin: 0;
+}
+
+.profesores {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.profesores p {
+  text-align: center;
+  margin: 0;
+}
+
+.profesores img {
+  width: 20rem;
+  height: 25rem;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.biografia {
+  background-color: var(--colorSecundario);
+  padding: 1rem 0;
+  color: var(--colorFont);
+  border: 0.3rem solid var(--colorPrincipal);
+  border-radius: 1rem;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--colorFont);
+  font-size: 1.6rem;
+}
+
+.footer li {
+  list-style: none;
+  margin: 0;
+  line-height: 3.2rem;
+}
+
+.footer a {
+  color: var(--colorFont);
+  text-decoration: none;
+  font-size: 1.6rem;
 }
