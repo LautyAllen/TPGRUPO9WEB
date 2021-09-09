@@ -15,6 +15,8 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -72,7 +74,6 @@ body {
   justify-content: space-around;
   background-color: var(--colorSecundario);
   margin: 0;
-  padding: 1.6rem 0;
 }
 
 .navegacion li {
@@ -84,21 +85,21 @@ body {
   font-size: 1.6rem;
   text-transform: uppercase;
   color: var(--colorFont);
-  transition: all 0.2s;
+  transition: all 0.3s;
+  display: block;
+  padding: 1.6rem 10.6rem 1.6rem 10.7rem;
 }
 
 .navegacion__a:hover {
-  color: var(--colorFontSecundario);
+  background-color: var(--colorPrincipal);
 }
 
 /* MAIN */
 
-.nosotros {
-  text-align: center;
-  font-size: 2.8rem;
-}
-.nosotros h1 {
+h1 {
   margin: 3rem;
+  text-align: center;
+  font-size: 5rem;
 }
 
 .parrafo {
@@ -148,6 +149,7 @@ body {
   align-items: center;
   color: var(--colorFont);
   font-size: 1.6rem;
+  line-height: 3rem;
 }
 
 .footer li {
@@ -160,4 +162,54 @@ body {
   color: var(--colorFont);
   text-decoration: none;
   font-size: 1.6rem;
+}
+
+/* INSCRIPCIÓN */
+
+.inscripcion p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.grid-inscripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto;
+  background-color: var(--colorSecundario);
+  padding: 5rem;
+  padding-bottom: 1rem;
+  border-radius: 1.5rem;
+  color: #fff;
+  -webkit-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+}
+
+.grid-inscripcion label {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.grid-inscripcion input {
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.boton-inscripcion {
+  border: none;
+  background-color: #2db0f7;
+}
+
+.boton-inscripcion:hover {
+  cursor: pointer;
 }
