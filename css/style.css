@@ -71,6 +71,7 @@ body {
 
 .navegacion {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   background-color: var(--colorSecundario);
   margin: 0;
@@ -87,15 +88,21 @@ body {
   color: var(--colorFont);
   transition: all 0.3s;
   display: block;
-  padding: 1.6rem 10.6rem 1.6rem 10.7rem;
+  padding: 1.6rem 5rem;
+  text-align: center;
 }
 
 .navegacion__a:hover {
   background-color: var(--colorPrincipal);
 }
 
-/* MAIN */
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+  }
+}
 
+/* MAIN */
 h1 {
   margin: 3rem;
   text-align: center;
@@ -197,6 +204,7 @@ h1 {
   border-radius: 1rem;
   height: 3.5rem;
   width: 100%;
+  border: none;
 }
 
 .flex {
@@ -207,9 +215,11 @@ h1 {
 
 .boton-inscripcion {
   border: none;
-  background-color: #2db0f7;
+  background-color: #2695f0;
+  transition: all 0.2s;
 }
 
 .boton-inscripcion:hover {
   cursor: pointer;
+  background-color: #2db0f7;
 }
