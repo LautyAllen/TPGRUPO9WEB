@@ -111,7 +111,8 @@ h1 {
 
 .parrafo {
   display: flex;
-  gap: 8rem;
+  flex-direction: column;
+  gap: 3rem;
   margin-bottom: 5rem;
 }
 
@@ -123,6 +124,7 @@ h1 {
   display: flex;
   gap: 3rem;
   margin-bottom: 5rem;
+  flex-direction: column;
 }
 
 .profesores p {
@@ -140,6 +142,17 @@ h1 {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  .parrafo {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .profesores {
+    flex-direction: row;
+  }
+}
+
 .biografia {
   background-color: var(--colorSecundario);
   padding: 1rem 0;
@@ -152,8 +165,8 @@ h1 {
 
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
   color: var(--colorFont);
   font-size: 1.6rem;
   line-height: 3rem;
@@ -169,6 +182,22 @@ h1 {
   color: var(--colorFont);
   text-decoration: none;
   font-size: 1.6rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .svg {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* INSCRIPCIÓN */
@@ -209,8 +238,15 @@ h1 {
 
 .flex {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: space-evenly;
+}
+
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+  }
 }
 
 .boton-inscripcion {
