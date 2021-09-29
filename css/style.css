@@ -265,7 +265,7 @@ h1 {
 
 h2 {
   text-align: center;
-  margin: 2rem;
+  margin: 2rem auto;
   text-transform: uppercase;
 }
 
@@ -275,10 +275,11 @@ h2 {
   margin: 2rem 0;
   border-radius: 3rem;
   border: 0.1rem solid var(--colorPrincipal);
+  box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.58);
 }
 .buscador input {
   margin: 1rem 1rem;
-  width: 0rem;
+  width: 20rem;
   height: 5rem;
   border: none;
   background-color: #a8b6bd;
@@ -303,13 +304,31 @@ input:hover {
   cursor: pointer;
 }
 
+.caja {
+  background-color: var(--colorSecundario);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.58);
+}
+
+@media (min-width: 768px) {
+  .caja {
+    background-color: transparent;
+  }
+}
+
 .establecimiento {
   background-color: var(--colorTerciario);
   width: 30rem;
   height: 20rem;
   border-radius: 1rem;
   transition: all 0.3s;
-  border: 0.1rem solid var(--colorPrincipal);
+}
+
+@media (min-width: 768px) {
+  .establecimiento {
+    border: 0.1rem solid var(--colorPrincipal);
+  }
 }
 
 .establecimiento:hover {
@@ -332,6 +351,13 @@ input:hover {
 
 .info-establecimiento {
   font-size: 1.8rem;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .info-establecimiento {
+    color: #000;
+  }
 }
 
 .info-establecimiento p {
@@ -348,7 +374,7 @@ input:hover {
 }
 
 .boton {
-  background-color: var(--colorTerciario);
+  background-color: #2695f0;
   padding: 1rem;
   border-radius: 1rem;
   margin-top: 1rem;
@@ -357,8 +383,14 @@ input:hover {
   color: #000;
   font-weight: bold;
   transition: all 0.3s;
-  border: 0.1rem solid var(--colorPrincipal);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    background-color: var(--colorTerciario);
+    border: 0.1rem solid var(--colorPrincipal);
+  }
 }
 
 .boton:hover {
