@@ -1,0 +1,225 @@
+:root {
+  --colorPrincipal: #181a1b;
+  --colorSecundario: #364f5c;
+  --colorFont: #fff;
+  --colorFontSecundario: #a3b1b8;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 2rem;
+}
+
+/* GLOBALES */
+
+.contenedor {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header-fondo {
+  background-color: var(--colorPrincipal);
+  padding: 2rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  color: var(--colorFont);
+  font-size: 4rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  color: var(--colorFontSecundario);
+}
+
+.redes {
+  display: flex;
+}
+
+.svg {
+  margin-right: 1rem;
+}
+.svg:last-of-type {
+  margin-right: 0;
+}
+
+/* NAVEGACIÓN */
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--colorSecundario);
+  margin: 0;
+}
+
+.navegacion li {
+  list-style: none;
+}
+
+.navegacion__a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--colorFont);
+  transition: all 0.3s;
+  display: block;
+  padding: 1.6rem 5rem;
+  text-align: center;
+}
+
+.navegacion__a:hover {
+  background-color: var(--colorPrincipal);
+}
+
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+  }
+}
+
+/* MAIN */
+h1 {
+  margin: 3rem;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.parrafo {
+  display: flex;
+  gap: 8rem;
+  margin-bottom: 5rem;
+}
+
+.parrafo p {
+  margin: 0;
+}
+
+.profesores {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.profesores p {
+  text-align: center;
+  margin: 0;
+}
+
+.profesores img {
+  width: 20rem;
+  height: 25rem;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.biografia {
+  background-color: var(--colorSecundario);
+  padding: 1rem 0;
+  color: var(--colorFont);
+  border: 0.3rem solid var(--colorPrincipal);
+  border-radius: 1rem;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--colorFont);
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.footer li {
+  list-style: none;
+  margin: 0;
+  line-height: 3.2rem;
+}
+
+.footer a {
+  color: var(--colorFont);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+/* INSCRIPCIÓN */
+
+.inscripcion p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.flex-inscripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto;
+  background-color: var(--colorSecundario);
+  padding: 5rem;
+  padding-bottom: 1rem;
+  border-radius: 1.5rem;
+  color: #fff;
+  -webkit-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+}
+
+.flex-inscripcion label {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.flex-inscripcion input {
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  height: 3.5rem;
+  width: 100%;
+  border: none;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.boton-inscripcion {
+  border: none;
+  background-color: #2695f0;
+  transition: all 0.2s;
+}
+
+.boton-inscripcion:hover {
+  cursor: pointer;
+  background-color: #2db0f7;
+}
