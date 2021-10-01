@@ -453,6 +453,9 @@ Ariel Serur CONTACTOS
   padding-right: 3px;
   background-color: black;
 }
+.item2cont h2 {
+  text-align: left;
+}
 .item2cont {
   order: 2;
   width: 45rem;
