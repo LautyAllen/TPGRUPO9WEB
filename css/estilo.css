@@ -130,4 +130,18 @@ footer a{
 footer a:hover{
     background-color: black;
 }
+@media (min-width:1120px){
+    footer {
+    width: 90%;
+    max-width: 62.5em;
+    }
+}
 
+@media (min-width:1120px){
+    
+    aside {
+    width: 90%;
+    max-width: 62.5em;
+    margin: auto;
+    }
+}
