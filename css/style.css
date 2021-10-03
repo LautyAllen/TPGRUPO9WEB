@@ -89,7 +89,7 @@ body {
   color: var(--colorFont);
   transition: all 0.3s;
   display: block;
-  padding: 1.6rem 5rem;
+  padding: 1.6rem 3rem;
   text-align: center;
 }
 
@@ -97,7 +97,7 @@ body {
   background-color: var(--colorPrincipal);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .navegacion {
     flex-direction: row;
   }
