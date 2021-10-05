@@ -598,7 +598,7 @@ Ariel Serur calendario curso
   text-align: center;
 }
 
-@media (width: 1024px) {
+@media (min-width: 1024px) {
   .pagina {
     display: flex;
     flex-direction: row;
@@ -628,7 +628,7 @@ Ariel Serur calendario curso
   flex-direction: column;
 }
 
-@media (width: 1024px) {
+@media (min-width: 1024px) {
   .map-responsive {
     display: flex;
     flex-direction: row;
