@@ -412,9 +412,16 @@ input:hover {
 
 .flex-establecimiento-detallado {
   display: flex;
-  justify-content: start;
+  flex-direction: column;
   gap: 3rem;
   margin-left: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .flex-establecimiento-detallado {
+    flex-direction: row;
+    justify-content: start;
+  }
 }
 
 .info-establecimiento-detallado {
