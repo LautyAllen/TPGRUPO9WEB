@@ -89,7 +89,7 @@ body {
   color: var(--colorFont);
   transition: all 0.3s;
   display: block;
-  padding: 1.6rem 3rem;
+  padding: 1.6rem 5rem;
   text-align: center;
 }
 
@@ -97,9 +97,28 @@ body {
   background-color: var(--colorPrincipal);
 }
 
+.carrusel {
+  margin: 0;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
 @media (min-width: 1000px) {
   .navegacion {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navegacion__a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--colorFont);
+    transition: all 0.3s;
+    display: block;
+    padding: 1.6rem 3rem;
+    text-align: center;
   }
 }
 
@@ -308,18 +327,13 @@ input:hover {
   background-color: var(--colorSecundario);
   padding: 2rem;
   border-radius: 1rem;
-  transition: all 0.3s;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.58);
 }
 
 @media (min-width: 768px) {
   .caja {
     background-color: transparent;
   }
-}
-
-.caja:hover {
-  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.58);
-  cursor: pointer;
 }
 
 .establecimiento {
@@ -403,36 +417,6 @@ input:hover {
   background-color: var(--colorPrincipal);
 }
 
-/* ESTABLECIMIENTO DETALLADO */
-
-.establecimiento-detallado {
-  width: 100%;
-  height: 20rem;
-}
-
-.flex-establecimiento-detallado {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  margin-left: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .flex-establecimiento-detallado {
-    flex-direction: row;
-    justify-content: start;
-  }
-  .establecimiento-detallado {
-    width: 60rem;
-    height: 40rem;
-  }
-}
-
-.info-establecimiento-detallado {
-  line-height: 3.5rem;
-  font-size: 2.4rem;
-}
-
 /*
 Ariel Serur CONTACTOS
 */
@@ -513,7 +497,7 @@ Ariel Serur calendario curso
 */
 .calendarioCursos h2 {
   text-align: center;
-  margin: 5rem;
+  margin: 10rem;
 }
 .calendarioCursos h3 {
   margin: 10px 0px 0px 50px;
@@ -533,6 +517,7 @@ Ariel Serur calendario curso
 .mes1CalCurso {
   display: flex;
   height: auto;
+  margin: 20px 20px 20px 20px;
   padding: 20px 20px 20px 10px;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -565,7 +550,6 @@ Ariel Serur calendario curso
   font-size: 80%;
   line-height: 25px;
 }
-
 .datoCal {
   color: #fff;
   margin: 0px 0px 0px 0px;
@@ -594,6 +578,7 @@ Ariel Serur calendario curso
   margin: 1em auto;
   border-radius: 15%;
 }
+
 .pagina h3 {
   text-align: center;
 }
@@ -649,8 +634,14 @@ Ariel Serur calendario curso
   border-radius: 15%;
 }
 
-.carrusel {
-  margin: 0;
-  text-align: center;
-  margin-top: 1.5em;
+/*lauty facebook instagram hover*/
+.svg:hover {
+  filter: invert(0.5);
+}
+.pagina :hover {
+  -webkit-transform: scale(1.1);
+}
+
+.map-responsive iframe:hover {
+  -webkit-transform: scale(1.3);
 }
